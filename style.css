@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #222E50;
+}
+
+section{
+
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 4em;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 50px;
+}
+
+div {
+    border-style: solid;
+    color: white;
+	border-width: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: absolute;
+	border-radius: 50%;
+}
+
+#color_1 {
+	width: 200px;
+	height: 200px;
+    border-color: white transparent transparent transparent;
+	animation: rotate 1.2s linear infinite;
+	top: 50px;
+	left: 50px;
+}
+
+#color_2 {
+	width: 180px;
+	height: 180px;
+	border-color: transparent #C8C6D7 transparent transparent;
+	animation: rotate .9s linear infinite;
+	top: 60px;
+	left: 60px;
+}
+
+#color_3 {
+    width: 160px;
+	height: 160px;
+	border-color: transparent transparent transparent #C8C6D7;
+	animation: rotate 1.6s linear infinite;
+	top: 70px;
+	left: 70px;
+}
+
+#color_4 {
+	width: 140px;
+	height: 140px;
+	border-color: transparent transparent #C8C6D7 transparent;
+	animation: rotate 1.2s linear infinite;
+	top: 80px;
+	left: 80px;
+}
+
+
+/* ANIMATION KEYFRAME *************/
+
+@keyframes rotate{
+	from{
+		transform: rotateZ(0deg);
+	}
+	to {
+	     transform: rotateZ(360deg);
+	}
+}
